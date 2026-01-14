@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body{
+    background:#eef2f5;
+}
+.wrapper{
+    max-width:1100px;
+    margin:40px auto;
+    display:flex;
+    background:#fff;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* LEFT PANEL */
+.sidebar{
+    width:35%;
+    background:#2f5d73;
+    color:#fff;
+    padding:35px 25px;
+}
+.profile{
+    text-align:center;
+}
+.profile img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #fff;
+    margin-bottom:15px;
+}
+.profile h2{
+    font-size:22px;
+}
+.profile p{
+    font-size:13px;
+    opacity:0.9;
+}
+.section{
+    margin-top:30px;
+}
+.section h3{
+    font-size:16px;
+    margin-bottom:15px;
+    padding-bottom:6px;
+    border-bottom:2px solid rgba(255,255,255,0.3);
+}
+.contact p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+.skill{
+    margin-bottom:14px;
+}
+.skill span{
+    font-size:13px;
+}
+.bar{
+    background:rgba(255,255,255,0.3);
+    height:7px;
+    border-radius:5px;
+    margin-top:6px;
+    overflow:hidden;
+}
+.bar div{
+    height:100%;
+    background:#fff;
+    width:0;
+    transition:1.5s;
+}
+
+/* RIGHT PANEL */
+.content{
+    width:65%;
+    padding:35px;
+}
+.header{
+    margin-bottom:30px;
+}
+.header h1{
+    font-size:34px;
+    color:#2f5d73;
+}
+.header span{
+    display:inline-block;
+    margin-top:5px;
+    font-size:14px;
+    color:#666;
+}
+.block{
+    margin-bottom:30px;
+}
+.block h3{
+    color:#2f5d73;
+    margin-bottom:10px;
+}
+.block p, .block li{
+    font-size:14px;
+    line-height:1.7;
+    color:#444;
+}
+.block ul{
+    padding-left:18px;
+}
+
+/* FORM */
+.form-box{
+    background:#eef2f5;
+    padding:20px;
+    border-radius:10px;
+}
+.form-box input,
+.form-box select,
+.form-box textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+.form-box button{
+    width:100%;
+    padding:12px;
+    background:#2f5d73;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+.form-box button:hover{
+    background:#1f4253;
+}
+
+/* ANIMATION */
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .wrapper{
+        flex-direction:column;
+    }
+    .sidebar,.content{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- LEFT -->
+    <div class="sidebar fade">
+        <div class="profile">
+          <img src="images/profile.JPG">
+
+            
+            <h2>OLAIYA OLAWALE MATTHEW</h2>
+            <p>Graphic Designer | Web Developer</p>
+        </div>
+
+        <div class="section contact">
+            <h3>Contact</h3>
+            <p>📞 +234 8102357604</p>
+            <p>✉️  olawaleolaiya0@gmail.com</p>
+            <p>📍 Ibadan, Nigeria</p>
+        </div>
+
+        <div class="section">
+            <h3>Skills</h3>
+
+            <div class="skill">
+                <span>Web Developer</span>
+                <div class="bar"><div data-width="90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Digital solution </span>
+                <div class="bar"><div data-width="80%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Graphic Design</span>
+                <div class="bar"><div data-width="75%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>web Designer</span>
+                <div class="bar"><div data-width="85%"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="content">
+
+        <div class="header fade">
+            <h1>OLAIYA OLAWALE MATTHEW </h1>
+            <span>Professional Web Developer</span>
+        </div>
+
+        <div class="block fade">
+            <h3>About Me</h3>
+            <p>
+               A goal-driven Computer science with strong interest in software development,web technologies, and digital solution.I am passionate about learning and building real-world project, and building skills that will help me succeed in tech industry.
+            </p>
+        </div>
+
+        <div class="block fade">
+            <h3>Education</h3>
+            <p><b> 1. ND Computer Science and  IT programming program moor plantation Ibadan </b>  – FCAPHIT (2025 – present) </p>
+        </div>
+
+
+        <div class="block fade">
+            <h3>Work Experience</h3>
+            <ul>
+                <li>FCAHPTIB & Moor Tech{2025-present}: 1.Assisted in setting up computer system and peripherals. 2.performed h0and on troubleshhoting and handwantis software issue. 3. supported students and staff in with system usage and technicain problems.</li>
+                <li>Technology intern{siwes} moor plantation,Ibadan 2024-2026: 1.Gotinod practical experience in computer system,networking,and software tools. 2. Assited in IT operation and maintenance. 3. Learned profeesional workplace communications teamwork. </li>
+                <li>Studet industrial work experience{siwes}.Moor plantation,2025-2026: 1.Designed and developed responsive website using html css and javascript. 2. Built interactive website and students managements systems.</li>
+            </ul>
+        </div>
+
+        <div class="block fade">
+            <h3>Request a Service</h3>
+            <form class="form-box" onsubmit="sendWhatsApp(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <select id="service" required>
+                    <option value="">Select Service</option>
+                    <option>Web Development</option>
+                    <option>E-Commerce Website</option>
+                    <option>Portfolio Website</option>
+                    <option>Website Redesign</option>
+                </select>
+
+                <textarea id="message" rows="4" placeholder="Describe your project..." required></textarea>
+                <button type="submit">Request via WhatsApp</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script>
+// WhatsApp form
+function sendWhatsApp(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let service = document.getElementById("service").value;
+    let message = document.getElementById("message").value;
+
+    let phone = "2348102357604"; // YOUR NUMBER
+    let text = `Hello, my name is ${name}%0AEmail: ${email}%0AService: ${service}%0AProject: ${message}`;
+
+    window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+}
+
+// Scroll animation
+const faders = document.querySelectorAll(".fade");
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+faders.forEach(el=>observer.observe(el));
+
+// Skill animation
+document.querySelectorAll(".bar div").forEach(bar=>{
+    bar.style.width = bar.getAttribute("data-width");
+});
+</script>
+
+</body>
+</html>
